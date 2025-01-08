@@ -7,19 +7,20 @@ import "@stackflow/plugin-basic-ui/index.css";
 import MyActivity from "./MyActivity";
 import PushPage from "./PushPage";
 import ReplacePage from "./ReplacePage";
+import PushToPushPage from "./PushToPushPage";
 
 const myPlugin = () => {
   return {
     key: "unique",
     onPushed({ effect }) {
-      console.log(efffect.activity.name);
+      console.log(effect.activity.name);
     },
   };
 };
 
-export const { Stack, useFlow } = stackflow({
+export const { Stack, useFlow, useStepFlow } = stackflow({
   transitionDuration: 350,
-  activities: { MyActivity, PushPage, ReplacePage },
+  activities: { MyActivity, PushPage, ReplacePage, PushToPushPage },
   plugins: [
     basicRendererPlugin(),
     basicUIPlugin({

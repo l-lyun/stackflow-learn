@@ -14,12 +14,10 @@ const ReplacePage: ActivityComponentType<ReplaceParams> = ({
     pop();
   };
   return (
-    <AppScreen appBar={{ title: "ReplacePage" }}>
-      <div>
-        <h1>{title}</h1>
-        <button onClick={onClick}>Go Back</button>
-      </div>
-    </AppScreen>
+    <div>
+      <h1>{title}</h1>
+      <button onClick={onClick}>Go Back</button>
+    </div>
   );
 };
 

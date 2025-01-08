@@ -7,18 +7,22 @@ type PushParams = {
 };
 
 const PushPage: ActivityComponentType<PushParams> = ({ params: { title } }) => {
-  const { pop } = useFlow();
+  const { pop, push } = useFlow();
   const activity = useActivity();
 
   console.log(activity);
-  const onClick = () => {
+  const onClickBack = () => {
     pop();
+  };
+  const onClickPushToPush = () => {
+    push("PushToPushPage", { title: "PushToPushPage" });
   };
   return (
     <AppScreen appBar={{ title: "PushPage" }}>
       <div>
         <h1>{title}</h1>
-        <button onClick={onClick}>Go Back</button>
+        <button onClick={onClickBack}>Go Back</button>
+        <button onClick={onClickPushToPush}>Go to Push</button>
       </div>
     </AppScreen>
   );

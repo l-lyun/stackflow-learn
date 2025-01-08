@@ -10,17 +10,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stackflow/config": "^1.2.0",
     "@stackflow/core": "^1.1.0",
+    "@stackflow/link": "^1.6.0",
     "@stackflow/plugin-basic-ui": "^1.11.1",
+    "@stackflow/plugin-history-sync": "^1.7.0",
     "@stackflow/plugin-renderer-basic": "^1.1.13",
     "@stackflow/react": "^1.4.1",
     "D": "^1.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.3",
+    "expo-cli": "^6.3.10",
     "prettier": "^3.4.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-native-webview": "^13.12.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
